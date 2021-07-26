@@ -594,7 +594,7 @@ input:checked + .slider:before {
 @media (max-width:959px) {/* 모바일: 최대 959 */
   /* .gTopNavi {display: block !important;} */
 /* 버튼 */
-.btnIcon.top {width: 58px;height: 32px;background: url(https://www.dbpia.co.kr/images/common/img_arrow_top.png) no-repeat 50%;background-size: cover;}
+.btnIcon.top {width: 54px;height: 24px;background:rgba(0,0,0,.5) url(../images/common/ico_top.png) no-repeat 50% / 20px 10px;border-radius: 10px;}
 .btn.large {min-width: 80px;min-height: 31px;padding: 0 5px;}
 .btn.selectMoney {padding: 6px 0px 5px;min-width: auto;}
 

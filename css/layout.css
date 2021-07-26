@@ -1903,7 +1903,7 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .footer .ftBot .ftRight ul.bn li a.bnGCS {background: url(../images/common/bn_GCS.png) no-repeat 0 0;background-size: cover;}
 .footer .ftBot .ftRight ul.bn li a.RightOk {background: url(../images/common/RightOk.png) no-repeat 0 0;background-size: cover;}
 
-.footer .gTopNavi {position: fixed;right: 21px;bottom: 115px;display: none;z-index: 999;}
+.footer .gTopNavi {position: fixed;right: 21px;bottom: 130px;display: none;z-index: 999;}
 .footer .gTopNavi.bottom {bottom: 177px;}
 
 /* 서브 메뉴 */
