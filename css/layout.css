@@ -80,7 +80,7 @@ body.modalOpen {overflow: hidden;}
 .container {width: 100%;min-height: 100%;}
 
 /* 헤더 */
-.header {width: 100%;z-index: 200;position:relative;border-bottom: 1px solid #e7e7e7;}
+.header {width: 100%;z-index: 200;position:sticky;border-bottom: 1px solid #e7e7e7;top:0;}
 .header .hdTop {padding-bottom: 15px;}
 .header .hdTop:after {display: block; width: 0; height: 0; content: ""; clear: both;}
 .header .hdTop ul {overflow: hidden;float: right;padding-top: 15px;}
@@ -1903,7 +1903,7 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .footer .ftBot .ftRight ul.bn li a.bnGCS {background: url(../images/common/bn_GCS.png) no-repeat 0 0;background-size: cover;}
 .footer .ftBot .ftRight ul.bn li a.RightOk {background: url(../images/common/RightOk.png) no-repeat 0 0;background-size: cover;}
 
-.footer .gTopNavi {position: fixed;right: 21px;bottom: 130px;display: none;z-index: 999;}
+.footer .gTopNavi {position: fixed;right: 21px;bottom: 135px;display: none;z-index: 999;}
 .footer .gTopNavi.bottom {bottom: 177px;}
 
 /* 서브 메뉴 */
@@ -2544,13 +2544,13 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 
 
 /*210601 보더 제거*/
-.bnHead {width: 100%;z-index: 200;/* position:relative; */background-color: #fff;/* border-bottom: 1px solid #efefef; */}
+.bnHead {width: 100%;z-index: 200;position:relative;background-color: #fff;/* border-bottom: 1px solid #efefef; */}
 
 
 /*210427 헤더 고정*/
 
 /*210428 패딩수정*/
-.bnHead.sticky{position: fixed;padding: 15px 0px;}
+.bnHead.sticky{position: relative;padding: 15px 0px;top:0;}
 .bnHead.sticky .hdTop {display: none;}
 .bnHead.sticky .fCheck input[type="checkbox"] + label{display: none;}
 .bnHead.sticky .gSearch a.btnDetailSearch{display: none;}
