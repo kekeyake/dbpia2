@@ -78,6 +78,7 @@ body.modalOpen {overflow: hidden;}
 .wrap {width: 100%;min-width: 320px;/* min-height: 100%; *//* height: 100%; */position: relative;z-index: 1;}
 .inner {width: 100%;max-width: 1080px;margin:0 auto;}
 .container {width: 100%;min-height: 100%;}
+.container.sticky {margin-top: 156px;}
 
 /* 헤더 */
 .header {width: 100%;z-index: 200;position:relative;border-bottom: 1px solid #e7e7e7;}
@@ -1775,7 +1776,7 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 }
 
 @media (max-width: 959px) {/* 모바일: 최대 959 */
-
+	.container.sticky {margin-top: 91px;}
 /* 모바일 내비게이션 */
 .mobileNavgation {display: block;position: relative;}
 /*2021-04-06 메뉴 버튼 위치 초정으로 인해 mobileNavgation display시 .menuButton도 같이 변경되게 수정*/

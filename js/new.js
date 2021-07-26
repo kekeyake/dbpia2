@@ -72,14 +72,17 @@ $(document).ready(function(){
 	window.onscroll = function() {myFunction()};
 
 		var header = document.getElementById("bnHead");
+		var container = document.getElementById("container");
 		var sticky = header.offsetTop;
 
 		function myFunction() {			
 			if($(window).width() > 959) {
 			  if (window.pageYOffset > 157) {
 				header.classList.add("sticky");
+				container.classList.add("sticky");
 			  } else {
 				header.classList.remove("sticky");
+				container.classList.remove("sticky");
 			  }
 			
 			}
@@ -87,8 +90,10 @@ $(document).ready(function(){
 			if($(window).width() < 959) {
 			  if (window.pageYOffset > 91) {
 				header.classList.add("sticky");
+				container.classList.add("sticky");
 			  } else {
 				header.classList.remove("sticky");
+				container.classList.remove("sticky");
 			  }
 			
 			}
