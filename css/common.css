@@ -295,7 +295,7 @@ input[type*="tel"] {font-family:'notokr-regular',Helvetica,Arial,sans-serif;}
 .btnIcon {overflow:hidden;display:inline-block;font-size:0;color:transparent;text-indent:-120%;vertical-align:middle;background:url(../images/common/common_sfix_icon.png) no-repeat;}
 .btnIcon.plus {width: 34px;height: 34px;background-position: -391px -42px;padding: 8px 0 8px;}
 .btnIcon.minus {width: 34px;height: 34px;background-position: -441px -42px;}
-.btnIcon.top {width: 70px;height: 30px;background: url(https://www.dbpia.co.kr/images/common/img_arrow_top.png) no-repeat 50% / cover;}
+.btnIcon.top {width: 70px;height: 30px;background: rgba(0,0,0,.5) url(../images/common/ico_top.png) no-repeat 50% / 20px 10px;}
 
 .btnIconB {position:relative;text-align: center;}
 .recomWrap .btnIconB span:before {display: none; content:"";margin: 0;vertical-align: middle;background:url(../images/common/common_sfix_icon.png) no-repeat;}
@@ -590,8 +590,9 @@ input:checked + .slider:before {
 }
 }
 */
-
+/* .gTopNavi {display: none !important;} */
 @media (max-width:959px) {/* 모바일: 최대 959 */
+  /* .gTopNavi {display: block !important;} */
 /* 버튼 */
 .btnIcon.top {width: 58px;height: 32px;background: url(https://www.dbpia.co.kr/images/common/img_arrow_top.png) no-repeat 50%;background-size: cover;}
 .btn.large {min-width: 80px;min-height: 31px;padding: 0 5px;}

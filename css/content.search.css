@@ -1800,6 +1800,7 @@ margin: -1px 0px 0px 5px;}
 .bnClass .communityView {margin:40px 0 0 20px;}
 .bnClass .communityView .tit {font-size: 14px;font-family: 'notokr-bold', sans-serif;color: #111;padding-bottom: 5px;margin-bottom: 11px;border-bottom: 1px solid #efefef;}
 .bnClass .communityView .tit b {color:#ef4348;}
+.bnClass .communityView ol {border-bottom: 1px solid #efefef;padding-bottom: 11px;}
 .bnClass .communityView li {font-size: 13px;color:#111;position: relative;padding-left: 15px;margin-bottom: 10px;}
 .bnClass .communityView li:last-child {margin-bottom: 0;}
 .bnClass .communityView li::before {display: inline-block;color:#ef4348;position: absolute;left:0;top:0;}
