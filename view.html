@@ -81,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="https://www.dbpia.co.kr/js/chart.min.js"></script>
 <script type="text/javascript" src="https://www.dbpia.co.kr/js/utils.js"></script>
 <script type="text/javascript" src="https://www.dbpia.co.kr/js/moment.min.js"></script>
-<script type="text/javascript" src="https://www.dbpia.co.kr/js/common.js?ver=20210722v01"></script>
+<script type="text/javascript" src="js/common.js?ver=20210722v01"></script>
 <script type="text/javascript" src="https://www.dbpia.co.kr/js/swiper.js"></script>
 
 <script type="text/javascript" src="https://www.dbpia.co.kr/js/sticky-sidebar.js"></script>
@@ -2579,24 +2579,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  </div>
              	  </div>
 				
-                    <!-- 커뮤니티 인기글 추가 -->
-                    <div class="communityView">
-                        <p class="tit"><b>커뮤니티</b> 주간 인기글</p>
-                        <ol>
-                            <li>논문작성법 FOR 대학원생</li>
-                            <li>대학원,, 오지마세요. 그러나 논문 작성법 공유합니다.</li>
-                            <li>학부생/고등학생들을 위한 논문 작성법 공유합니다.</li>
-                            <li>억셉 되는 법…</li>
-                            <li>대학원에서 살아남기 / 비 서울의 고군분투기</li>
-                        </ol>
-                        <div id="" class="viewBottom">
-							<!-- <div id="" class="viewBtn"> 
-								<a href="javascript:;" class="prev active"></a>
-								<a href="javascript:;" class="next"></a>    
-							</div> -->
-							<a href="#a" class="more-list">더보기</a> <!-- 더보기 -->
-             	  		</div>
-                    </div>
+<!-- 커뮤니티 인기글 추가 -->
+<div class="communityView">
+	<p class="tit"><b>커뮤니티</b> 주간 인기글</p>
+	<ol>
+		<li>논문작성법 FOR 대학원생</li>
+		<li>대학원,, 오지마세요. 그러나 논문 작성법 공유합니다.</li>
+		<li>학부생/고등학생들을 위한 논문 작성법 공유합니다.</li>
+		<li>억셉 되는 법…</li>
+		<li>대학원에서 살아남기 / 비 서울의 고군분투기</li>
+	</ol>
+	<div id="" class="viewBottom">
+		<!-- <div id="" class="viewBtn"> 
+			<a href="javascript:;" class="prev active"></a>
+			<a href="javascript:;" class="next"></a>    
+		</div> -->
+		<a href="#a" class="more-list">더보기</a> <!-- 더보기 -->
+	</div>
+</div>
 		<!--210513 플로팅바 수정-->
               <div id="newFloat" class="newFloat sticky" style="opacity: 0;">
 					<div class="floatingBar inner">          
@@ -4192,16 +4192,19 @@ function b2bClose(){
 </div>
  -->
 <!-- 플로팅배너  -->
-<div class="popup_tooltip tooltip_new wide" id="nodeDetailFloBa">
-
-	<a href="#" class="btn_close">닫기</a>
+<div class="popup_tooltip tooltip_new wide" id="nodeDetailFloBa">	
 	<a href="https://www.dbpia.co.kr/curation/curationList?bestCode=BN00" target="_blank" onclick="fn_statistics('Z328', '', '')">
-		<div class="slide_area">
-			<img src="https://www.dbpia.co.kr/images/event/floating_banner_20210625.jpg" alt="" class="imgBanner">
-            <img src="https://www.saraminbanner.co.kr/new/main/2021/07/qvlyn2_v39v-2so1qt_4spng.png" alt="" class="imgThumb">
+		<div class="slide_area imgBanner">
+			<a href="#a" class="btn_close">닫기</a>
+			<img src="https://www.dbpia.co.kr/images/event/floating_banner_20210625.jpg" alt="" class="">
+			<div class="close_today">
+				<a href="#a" class="btn_close_for_today" onclick="fn_statistics('Z330', '', '')">오늘 하루 안 보기</a>
+			</div>			
 		</div>
-		<div class="btn_close_for_today" onclick="fn_statistics('Z330', '', '')">오늘 하루 안 보기</div>
-	</a>
+		<div class="slide_area imgThumb">
+			<img src="https://www.saraminbanner.co.kr/new/main/2021/07/qvlyn2_v39v-2so1qt_4spng.png" alt="">
+		</div>
+	</a>	
 </div>
 
 </body>
