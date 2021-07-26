@@ -289,7 +289,7 @@ body.modalOpen {overflow: hidden;}
 .footer .ftBot .ftRight ul.bn li a.RightOk {background: url(../images/common/RightOk.png) no-repeat 0 0;background-size: 45px 23px;background-position:center center}
 .footer .ftBot .ftRight ul.bn li a.bnKepa {background: url(../images/common/bn_Kepa.png) no-repeat 0 0;background-size: cover;background-position:center center}
 
-.footer .gTopNavi {position: fixed;right: 20px;bottom: 10px;display: block;z-index: 999;border-radius: 10px;overflow: hidden;}
+.footer .gTopNavi {position: fixed;right: 20px;bottom: 101px;display: none;z-index: 999;}
 .footer .gTopNavi.bottom {bottom: 177px;}
 
 /* 서브 메뉴 */
@@ -1775,7 +1775,6 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 }
 
 @media (max-width: 959px) {/* 모바일: 최대 959 */
-
 /* 모바일 내비게이션 */
 .mobileNavgation {display: block;position: relative;}
 /*2021-04-06 메뉴 버튼 위치 초정으로 인해 mobileNavgation display시 .menuButton도 같이 변경되게 수정*/
@@ -1904,7 +1903,7 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .footer .ftBot .ftRight ul.bn li a.bnGCS {background: url(../images/common/bn_GCS.png) no-repeat 0 0;background-size: cover;}
 .footer .ftBot .ftRight ul.bn li a.RightOk {background: url(../images/common/RightOk.png) no-repeat 0 0;background-size: cover;}
 
-.footer .gTopNavi {position: fixed;right: 21px;bottom: 135px;display: none;z-index: 999;}
+.footer .gTopNavi {position: fixed;right: 14px;bottom: 115px;display: none;z-index: 999;}
 .footer .gTopNavi.bottom {bottom: 177px;}
 
 /* 서브 메뉴 */
@@ -1985,6 +1984,8 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 
 .tableLayout.notice {overflow-x: hidden;}
 .tableLayout.notice table {table-layout: auto;}
+.tableLayout.notice table colgroup col:nth-child(3) {display: none;}
+.tableLayout.notice table colgroup col:nth-child(4) {display: none;}
 .tableLayout.notice table thead th {white-space: inherit;}
 .tableLayout.notice table thead th:nth-child(3) {display: none;}
 .tableLayout.notice table thead th:nth-child(4) {display: none;}
@@ -2387,23 +2388,6 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .popup_tooltip .slide_dot .btn_dot{display:inline-block;margin-right:6px;width:12px;height:12px;vertical-align:top;border:1px solid #ddd;border-radius:50%;background:#fff}
 .popup_tooltip .slide_dot .btn_dot.active{border-color:#666;background:#7c7c7c}
 
-/* 210723 배너수정 */
-.popup_tooltip.tooltip_new {right:20px !important;bottom:140px;width: auto;height: auto;border: 0 solid #000;box-shadow: none;background:none;}
-.popup_tooltip.tooltip_new .btn_close{display:block;position:absolute;right:10px;top:10px;width:16px;height:16px;text-align:left;text-indent:-9999px;background:url("../images/popuptooltip/ico_close.png") no-repeat center center;z-index:10}
-.popup_tooltip.tooltip_new .slide_area {width: 70px;height: 120px;margin:0; overflow: visible;background: transparent;position: absolute;right:0;bottom:0;}
-.popup_tooltip.tooltip_new .close_today {background:#fff;width: 100%;}
-.popup_tooltip.tooltip_new img {display: block;border:1px solid #ddd;box-shadow:0 0 8px rgba(0,0,0,0.1);}
-.popup_tooltip.tooltip_new .imgBanner {z-index: 2; width: 340px;height: 160px;-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;-o-transition:transform 0.5s,opacity 0.5s;transition:opacity 0.5s,-webkit-transform 0.5s;transition:transform 0.5s,opacity 0.5s;transition:transform 0.5s,opacity 0.5s,-webkit-transform 0.5s;-webkit-transform:scale(0,0);-ms-transform:scale(0,0);transform:scale(0,0);-webkit-transform-origin:100% 100%;-ms-transform-origin:100% 100%;transform-origin:100% 100%;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";border-radius: 3px;}
-.popup_tooltip.tooltip_new .imgBanner img {border-radius: 3px;}
-.popup_tooltip.tooltip_new .imgThumb {z-index:1;width:70px;height:120px;opacity:1;}
-.popup_tooltip.tooltip_new .imgThumb img {position: absolute;right:0;bottom:0;border-radius: 10px;}
-.popup_tooltip.tooltip_new .btn_close_for_today {padding:3px;color:#666;font-size: 13px;opacity: 0;box-sizing:border-box;display: inline-block;}
-.popup_tooltip.tooltip_new.wide .slide_area {width: 340px;height: 160px; }
-.popup_tooltip.tooltip_new.wide .imgThumb {opacity:0;}
-.popup_tooltip.tooltip_new.wide .imgBanner {-webkit-transform:scale(1,1);-ms-transform:scale(1,1);transform:scale(1,1);opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
-.popup_tooltip.tooltip_new.wide .btn_close_for_today {-webkit-transition:opacity 0.3s;-o-transition:opacity 0.3s;transition:opacity 0.3s;opacity: 1;}
-
-
 
 /* 툴팁 */
 .ntooltip{display:none;position:absolute;left:0;top:0;margin:-35px 0 0 10px;padding:10px 15px;max-width:250px;text-align:left;line-height:20px;font-family: 'notokr-medium', sans-serif;font-size:13px;color:#555;border:1px solid #e0e0e0;box-shadow:3px 3px 8px rgba(0,0,0,.1);box-shadow:3px 4px 6px rgba(0,0,0,.2);background:#fff;z-index:210}
@@ -2469,19 +2453,7 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 	.joinComplete .botBox:last-child .botTitle{margin-bottom:3px}
 	.joinComplete .botBox:last-child{padding-bottom:0}
 	.joinComplete .botBox p{font-size:14px}
-	#nodeDetailFloBa{bottom: 70px; width: 90%; height: 58px;left:50% !important; transform: translateX(-50%);background: rgba(0,0,0,.5);}
-
-    /* 210723 배너수정 */
-.popup_tooltip.tooltip_new {right:20px !important;bottom:140px;width: auto;height: auto;border: 0 solid #000;box-shadow: none;background:none;}
-.popup_tooltip.tooltip_new .slide_area {width: 100%;height: 58px;margin:0; overflow: visible;background: transparent !important;}
-.popup_tooltip.tooltip_new.wide .slide_area {width: 100%;height: 58px; }
-.popup_tooltip.tooltip_new img {display: block;position: absolute;right:0;bottom:0;border:1px solid #ddd;box-shadow:0 0 8px rgba(0,0,0,0.1);}
-.popup_tooltip.tooltip_new .btn_close_for_today {padding:3px;background:#fff;color:#666;font-size: 13px;opacity: 1;position: absolute;left:0;bottom:-21px;}
-.popup_tooltip.tooltip_new .imgThumb {display: none;}
-.popup_tooltip.tooltip_new .imgBanner {width: 100%;height: 58px;-webkit-transform:scale(1,1);-ms-transform:scale(1,1);transform:scale(1,1);opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
-.popup_tooltip.tooltip_new .imgBanner img {width: 308px;height: 58px;border-radius: 3px;margin:0 auto;position: static;}
-.popup_tooltip.tooltip_new.wide .btn_close_for_today {-webkit-transition:opacity 0.3s;-o-transition:opacity 0.3s;transition:opacity 0.3s;opacity: 1;}
-.popup_tooltip.tooltip_new .btn_close {width: 40px;height: 58px;top:0;right:0; background: url(../images/popuptooltip/ico_close2.png) no-repeat center center / 15px;}
+	#nodeDetailFloBa{bottom: 115px; width: 230px; height: 100px;right: 51px !important;}
 }
 
 
@@ -2545,13 +2517,13 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 
 
 /*210601 보더 제거*/
-.bnHead {width: 100%;z-index: 200;position:relative;top:0; background-color: #fff;/* border-bottom: 1px solid #efefef; */}
+.bnHead {width: 100%;z-index: 200;/* position:relative; */background-color: #fff;/* border-bottom: 1px solid #efefef; */}
 
 
 /*210427 헤더 고정*/
 
 /*210428 패딩수정*/
-.bnHead.sticky{position: fixed;padding: 15px 0px;top:0;animation: ani_dropdown .5s cubic-bezier(.215,.61,.355,1);}
+.bnHead.sticky{position: fixed;padding: 15px 0px;}
 .bnHead.sticky .hdTop {display: none;}
 .bnHead.sticky .fCheck input[type="checkbox"] + label{display: none;}
 .bnHead.sticky .gSearch a.btnDetailSearch{display: none;}
@@ -3905,7 +3877,6 @@ bottom: 0px;width: 100%;}
 .authorJournal .searchArea .checkGroup .chkwrap .chkSlide .slick-slide:first-child{margin-left: 0px;}
 
 
-.popup_tooltip.tooltip_new .btn_close_for_today:hover {text-decoration: underline;}
 
 
 @media screen and (max-width:1400px){
@@ -4194,13 +4165,3 @@ bottom: 0px;width: 100%;}
 
 
 
-@-webkit-keyframes ani_dropdown {
-	0% {
-		-webkit-transform:translateY(-150%);
-		transform:translateY(-150%)
-	}
-	100% {
-		-webkit-transform:translateY(0);
-		transform:translateY(0)
-	}
-}

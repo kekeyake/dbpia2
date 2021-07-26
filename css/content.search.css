@@ -20,7 +20,7 @@
 
 .searchP .filterGroup ul.yearlySort {overflow: hidden;margin-bottom: 17px;}
 .searchP .filterGroup ul.yearlySort li.year {margin-bottom: 8px;font-size: 13px;}
-.searchP .filterGroup ul.yearlySort li.year a {/* font-size: 13px; */}dev.dbpia.co.kr/
+.searchP .filterGroup ul.yearlySort li.year a {/* font-size: 13px; */}
 .searchP .filterGroup ul.yearlySort li.year a.selected {color: #f04349;}
 .searchP .filterGroup ul.yearlySort li.year span.directMod {color: #212121;margin-bottom: 8px;display: block;}
 .searchP .filterGroup ul.yearlySort li.year span.directMod.selected {color: #f04349;}
