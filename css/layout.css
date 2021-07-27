@@ -4237,7 +4237,21 @@ bottom: 0px;width: 100%;}
 .movie_list .movie_info .step {color: #111;font-size: 18px;font-weight: bold;}
 .movie_list .movie_info .tit {color: #111;font-size: 18px;font-weight: bold;margin-top: 10px;}
 .movie_list .movie_info .txt {color: #666;font-size: 14px;line-height: 26px;margin-top: 20px;padding-top:10px;border-top: 1px solid #111;}
-
+@media screen and (max-width: 1150px){
+	.movie_list li {
+		display: block;
+	}
+	.movie_list .movie_frame {
+		width: 100%;
+		height: auto;
+		position: relative;
+		margin-right: 20px;
+		background: url(../images/movie/ico_help.svg) no-repeat 50% 20% / 20%;
+	}
+	.movie_list .movie_info {
+		width:100%;
+	}
+}
 @-webkit-keyframes ani_dropdown {
 	0% {
 		-webkit-transform:translateY(-150%);
