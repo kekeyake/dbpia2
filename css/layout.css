@@ -474,6 +474,8 @@ button.btnIconB span.chooseBell {color: #db3a3f;font-weight: bold;}
 .headingArea .ttleSec .ttleSecMobile {display:none;}
 .headingArea .ttleSec .ttleSecMobile .fMemo{margin-top: 9px; margin-left: 0px !important;}
 
+.headingArea  .btn_list {font-size: 16px;display: block;color: #111;margin-bottom: 20px;}
+
 /* 타이틀 */
 .titleArea {position: relative;margin-top: 38px;margin-bottom: 12px;}
 .titleArea h3 {font-size: 16px;display: inline-block;color: #111;margin-right: 10px;font-family: 'notokr-bold', sans-serif;}
@@ -4193,7 +4195,7 @@ bottom: 0px;width: 100%;}
 .mb_10 {margin-bottom:10px;}
 
 /* 210726 내서재 영상 추가 */
-.movie_list {}
+.movie_list a:hover {text-decoration: none;}
 .movie_list li {
 	display: flex;
 	margin-bottom: 70px;
@@ -4237,6 +4239,11 @@ bottom: 0px;width: 100%;}
 .movie_list .movie_info .step {color: #111;font-size: 18px;font-weight: bold;}
 .movie_list .movie_info .tit {color: #111;font-size: 18px;font-weight: bold;margin-top: 10px;}
 .movie_list .movie_info .txt {color: #666;font-size: 14px;line-height: 26px;margin-top: 20px;padding-top:10px;border-top: 1px solid #111;}
+
+.movie_view {}
+.movie_view .tit {font-size: 20px;color: #111;font-weight: bold;}
+.movie_view .txt {font-size: 16px;color: #111;}
+.movie_view iframe {border: 0 solid #000;margin:10px 0;}
 @media screen and (max-width: 1150px){
 	.movie_list li {
 		display: block;
@@ -4246,11 +4253,17 @@ bottom: 0px;width: 100%;}
 		height: auto;
 		position: relative;
 		margin-right: 20px;
-		background: url(../images/movie/ico_help.svg) no-repeat 50% 20% / 20%;
+		background: url(../images/movie/ico_help.svg) no-repeat 50% 20px / 10%;
+	}
+	.movie_list .movie_frame p {
+		margin:100px 0;
+		position: static;
+	
 	}
 	.movie_list .movie_info {
 		width:100%;
 	}
+	.movie_view .tit {margin-top: 20px;}
 }
 @-webkit-keyframes ani_dropdown {
 	0% {
