@@ -1663,6 +1663,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<li class="group"><a id="historyList" href="https://www.dbpia.co.kr/mylib/historyList" class="tit" onclick="fn_statistics('R804', '', '')">내가 이용,조회한 논문</a></li>
 					
 					<li class="group"><a href="javascript:void(0);" onclick="fncInduceLogin()" class="titDisabled">리뷰 · 메모 관리</a></li>
+                    <li class="group"><a href="#a" class="titDisabled">논문 작성 TIP</a></li>
 				
 			
 		</ul>
@@ -1864,17 +1865,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="ttleSecPc">
 									
 										
-										
+                                            <!-- 논문작성팁 수정-->
 											<h2>
-												<span>전체 논문</span>
+												<span>논문 작성 TIP</span>
 												<div class="tooltipWrap">
 													<span class="blind">도움말</span>
 													<div class="tooltip">
 														<a href="#none" class="btnTooltip">도움말 보기</a>
 														<p class="desc leftTop" style="width: 410px;">
-															- 항목을 선택 후 드래그하여 원하는 폴더에 담아보세요.<br/>
-															- 등록하기를 이용하여 DBpia에 없는 자료를 추가해보세요.<br/>
-															- 논문보기에서 작성한 메모를 확인하세요.
+															글쓰기 연구가가 뽑은 <논문을 쓰기 전에 당신이 알아야 할 10가지> 
+                                                            <br>강의 영상을 무료로 보실 수 있습니다.
 														</p>
 													</div>
 												</div>
@@ -1903,77 +1903,135 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</div>
 					<div class="section">
-						<div class="noDataArea book" id="dev_nodataArea" style="display:none;">
-							<div class="noDataWrap">
-								<p class="icon book"><span class="blind">아이콘</span></p>
-								<p class="phrase">북마크하신 논문이 없습니다</p>
-							</div>
-						</div>
-						<div class="searchListArea">
-							<div class="listHead">
-								<span class="fCheck">
-									<input type="checkbox" id="pub_check_all" class="checkAll" onclick="fnCheckAll();"/>
-									<label for="pub_check_all">전체</label>
-								</span>
-								<div class="btnGroup" id="pub_funcButton">
-								
-									<button type="button" class="btn btnIconB noLine btnThesisDownload" onclick="fncMyStudyThesisDownloadAll();fn_statistics('R119', '', '');gtag('event', 'click', {'event_category':'논문이용_new','event_action':'전체다운로드','event_label':'내서재 전체논문','value':'1'})"><span class="download">다운로드</span></button>
-									
-									
-										
-										
-											<div class="tooltipWrap">
-												<span class="blind">인용하기</span>
-												<div class="tooltip">
-													<button type="button" class="btn btnIconB noLine btnQuoteModal btnModal btnTooltip" onclick="fnQuoteModal('');fn_statistics('R120', '', '');"><span class="quote">인용하기</span></button>
-													<p class="desc topLeft" style="width: 300px;">
-														2개 이상의 논문 인용은 로그인 후 가능합니다.
-													</p>
-												</div>
-											</div>
-										
-									
-									<button type="button" class="btn btnIconB noLine btnFolderManage" id="dev_folder_manage" onclick="fnFolderManage(this);fn_statistics('R111', '', '')"><span class="folder">폴더관리</span></button>
-									<button type="button" class="btn btnIconB noLine btnAlertPop" id="pub_alertPop1" onclick="fn_statistics('R112', '', '')"><span class="tresh">삭제</span></button>
-									<div class="folderManageArea" id="pub_folderManageArea">
-										<div class="folderManageBox">
-											<div class="folderManageHead">
-												<p>다음 폴더로 지정</p>
-											</div>
-											<div class="folderManageBody">
-												<ul class="list">
-													
-														
-														
-															
-														
-													
-												</ul>
-											</div>
-											<div class="folderManageFoot">
-												<a href="#none" class="save" onclick="fnFolderSave();" style="display:none;">저장</a>
-											</div>
-										</div>
-									</div>
-									
-										
-										
-											<button type="button" class="btn btnIconB noLine btnModal btnRegThesis"><span class="register">등록하기</span></button>
-										
-									
-								</div>
-								<div class="funcWrap pullRight" id="pub_funcButtonRight">
-									
-								</div>
-							</div>
-							<div class="listBody">
-								<ul class="list" id="dev_nodeList">
-								</ul>
-							</div>
-							<div class="listFoot">
-								<div class="paginate"></div>
-							</div>
-						</div>
+						<!-- 내 서재 영상 리스트-->
+                        <div class="movie_list">
+                            <ul>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie2.png" alt="">
+                                        <p>
+                                            일시적 오류가 발생하여 <br><b> 이미지를 불러올 수 없습니다</b>
+                                        </p>
+                                        <span class="time_txt">15분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">1강</p>
+										<p class="tit">논문이란 글의 특징을 이해하자.</p>
+                                        <p class="txt">논문이란 글의 장르적 특징을 이해함으로써 논문이 요구하는 필수 구성요소를 파악한다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">15분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">1강</p>
+										<p class="tit">논문이란 글의 특징을 이해하자.</p>
+                                        <p class="txt">논문이란 글의 장르적 특징을 이해함으로써 논문이 요구하는 필수 구성요소를 파악한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">17분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">2강</p>
+										<p class="tit">논문의 평가 내용을 확인하고 미리 준비한다.</p>
+                                        <p class="txt">논문의 평가 기준을 이해함으로써 논문 작성 시 꼭 지켜야 하는 내용,구성, 표현의 특징을 파악한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">16분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">3강</p>
+										<p class="tit">논문의 중심은 주제이다.</p>
+                                        <p class="txt">논문의 토대가 되는 '주제'의 중요성을 이해하고, 논문의 주제가 되기 위해 필요한 요건들을 파악한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">17분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">4강</p>
+										<p class="tit">나의 주장은 문장으로 표현되어야만 주제로 구성될 수 있다.</p>
+                                        <p class="txt">논문의 주제를 만들어가는 방법을 연구목적과의 상관관계 속에서 파악한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">15분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">5강</p>
+										<p class="tit">국문 초록에 주의하자.</p>
+                                        <p class="txt">논문의 핵심 내용을 담고 있는 국문초록의 실제 예시를 살펴봄으로써 논문이 요구하는 핵심 내용을 이해한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">18분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">6강</p>
+										<p class="tit">애증의 삼각관계, 인용, 주석, 표절의 관계를 이해한다.</p>
+                                        <p class="txt">논문 표절에 대해 이해하고, 표절이 되지 않는 인용과 주석 정리 방법을 파악한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">16분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">7강</p>
+										<p class="tit">표절의 기준은 반드시 확인한다.</p>
+                                        <p class="txt">구체적 예시를 통해 표절로 판단되는 기준들을 이해한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">16분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">8강</p>
+										<p class="tit">단락과 Paragraph의 차이를 이해하라.</p>
+                                        <p class="txt">논문의 논리적 흐름을 구성하는 기본 단위, '패러그래프'를 이해한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">15분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">9강</p>
+										<p class="tit">논문은 약속된 패턴이다, 주석과 참고문헌</p>
+                                        <p class="txt">논문에서 반드시 기술해야 하는 주석과 참고문헌 작성 방법의 원칙을 파악한다.</p>
+                                    </div>
+                                </li>
+								<li>
+                                    <div class="movie_frame">
+                                        <img src="images/movie/@movie.png" alt="">
+                                        <span class="time_txt">17분</span>
+                                    </div>
+                                    <div class="movie_info">
+										<p class="step">10강</p>
+										<p class="tit">논문도 결국은 글쓰기이다.</p>
+                                        <p class="txt">논리적 생각을 효과적으로 드러낼 수 있는 논문 문장 쓰기를 이해하고, 논문을 쓸 때 주의해야 할 표현을 익힌다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 					</div>
 				</form>
 			</div>

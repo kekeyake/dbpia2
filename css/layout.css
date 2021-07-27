@@ -4192,8 +4192,51 @@ bottom: 0px;width: 100%;}
 .mb_5 {margin-bottom:5px;}
 .mb_10 {margin-bottom:10px;}
 
+/* 210726 내서재 영상 추가 */
+.movie_list {}
+.movie_list li {
+	display: flex;
+	margin-bottom: 70px;
+}
+.movie_list .movie_frame {
+	width: 500px;
+	height: 280px;
+	position: relative;
+	margin-right: 20px;
+	background: url(../images/movie/ico_help.svg) no-repeat 50% 20% / 20%;
+}
+.movie_list .movie_frame img {
+	width: 100%;
+}
+.movie_list .movie_frame p {
+	position: absolute;
+	top:60%;
+	text-align: center;
+	color: #111;
+	font-size: 16px;
+	width: 100%;
+	font-family: 'notokr-medium', sans-serif;
+}
+.movie_list .movie_frame p b { font-weight: bold;}
+.movie_list .movie_frame .time_txt {
+	display: inline-block;
+	padding:5px 15px 4px;
+	color: #FFF;
+	font-size: 12px;
+	font-family: 'notokr-medium', sans-serif;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	right:10px;
+	bottom:10px;
 
-
+}
+.movie_list .movie_info {
+	width:calc( 100% - 520px );
+	padding-top: 20px;
+}
+.movie_list .movie_info .step {color: #111;font-size: 18px;font-weight: bold;}
+.movie_list .movie_info .tit {color: #111;font-size: 18px;font-weight: bold;margin-top: 10px;}
+.movie_list .movie_info .txt {color: #666;font-size: 14px;line-height: 26px;margin-top: 20px;padding-top:10px;border-top: 1px solid #111;}
 
 @-webkit-keyframes ani_dropdown {
 	0% {
